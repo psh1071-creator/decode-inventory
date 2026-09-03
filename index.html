@@ -64,9 +64,10 @@ h2{font-family:"Gowun Batang",serif;font-size:24px;margin:2px 0 0;font-weight:70
 .stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:20px;}
 .stock-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
 .stock-card.sold-out{opacity:.7;}
-.stock-card.sold-out summary{cursor:pointer;list-style:none;}
+.stock-card.sold-out summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px;}
 .stock-card.sold-out summary::-webkit-details-marker{display:none;}
-.stock-card.sold-out[open] .stock-card-head{padding-bottom:0;}
+.stock-card.sold-out summary .cat-chevron{font-size:14px;}
+.stock-card.sold-out[open] summary{border-bottom:1px solid var(--line);}
 .scthumb{display:block;width:30px;height:30px;border-radius:6px;object-fit:cover;background:var(--surface-2);flex:none;}
 .scthumb.noimg{display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:10px;}
 .stock-card-head{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;}
@@ -104,7 +105,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   </div>
 
   <section class="cover">
-    <p class="eyebrow">2026.09.03 16:15 기준 · 디코드 재고 현황</p>
+    <p class="eyebrow">2026.09.03 16:37 기준 · 디코드 재고 현황</p>
     <h1>재고 현황</h1>
     <p class="lede">디코드 재고 현황표 기준 자동 갱신 스냅샷입니다. 현재고는 총 재고(온라인+오프라인 합산)이며, 더디코드 열은 그중 오프라인(매장) 보유분입니다.</p>
   </section>
@@ -172,13 +173,14 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </summary>
     <div class="stock-grid">
 <details class="stock-card sold-out">
-  <summary><div class="stock-card-head">
+  <summary><span class="scname">T 001 KK/CC<span class="tag out">품절</span></span><span class="cat-chevron">▾</span></summary>
+  <div class="stock-card-head">
     <div class="scthumb noimg">-</div>
     <div class="scnamewrap">
       <div class="scname">T 001 KK/CC<span class="tag out">품절</span></div>
       
     </div>
-  </div></summary>
+  </div>
   <table class="sctable">
     <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
     <tbody><tr><td>M</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">11</td><td class="dim">30</td></tr><tr><td>L</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">26</td><td class="dim">12</td><td class="dim">39</td></tr><tr><td>XL</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">9</td><td class="dim">29</td></tr></tbody>
@@ -721,7 +723,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
 
 
   <footer>
-    <span>자동 생성 2026.09.03 16:15</span>
+    <span>자동 생성 2026.09.03 16:37</span>
   </footer>
 </div>
 </body>
