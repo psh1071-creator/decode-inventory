@@ -49,11 +49,17 @@ h1{font-family:"Gowun Batang",serif;font-size:40px;line-height:1.15;margin:0 0 1
 .alert .badge.low{border-color:var(--warn);color:var(--warn);}
 .alert .badge.out{border-color:var(--critical);color:var(--critical);}
 .alert .badge-thumb{width:20px;height:20px;border-radius:4px;object-fit:cover;flex:none;background:var(--surface-2);}
-section.block{margin-bottom:56px;}
+.cat-details{margin-bottom:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden;}
+.cat-details summary{cursor:pointer;padding:20px 24px;list-style:none;}
+.cat-details summary::-webkit-details-marker{display:none;}
+.cat-details[open] summary{border-bottom:1px solid var(--line);}
+.cat-details .stock-grid{padding:20px 24px;margin-top:0;}
 .sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:16px;}
 .sec-no{font-family:"Gowun Batang",serif;font-size:13px;color:var(--accent);letter-spacing:.08em;}
 .sec-title{font-size:12px;letter-spacing:.1em;color:var(--ink-soft);font-weight:600;}
-h2{font-family:"Gowun Batang",serif;font-size:24px;margin:2px 0 0;font-weight:700;}
+h2{font-family:"Gowun Batang",serif;font-size:24px;margin:2px 0 0;font-weight:700;display:flex;align-items:center;gap:8px;}
+.cat-chevron{font-size:16px;color:var(--ink-faint);transition:transform .15s;}
+.cat-details[open] .cat-chevron{transform:rotate(180deg);}
 .sec-note{font-size:13px;color:var(--ink-soft);margin:6px 0 0;}
 .stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:20px;}
 .stock-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
@@ -95,7 +101,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   </div>
 
   <section class="cover">
-    <p class="eyebrow">2026.09.03 16:01 기준 · 디코드 재고 현황</p>
+    <p class="eyebrow">2026.09.03 16:03 기준 · 디코드 재고 현황</p>
     <h1>재고 현황</h1>
     <p class="lede">디코드 재고 현황표 기준 자동 갱신 스냅샷입니다. 현재고는 총 재고(온라인+오프라인 합산)이며, 더디코드 열은 그중 오프라인(매장) 보유분입니다.</p>
   </section>
@@ -115,10 +121,12 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   </div>
 
 
-  <section class="block">
-    <div class="sec-head"><span class="sec-no">01</span><span class="sec-title">아우터 OUTER</span></div>
-    <h2>OUTER · 2개 품목 · 재고 130개</h2>
-    <p class="sec-note">재고자산가치 5,366,140원</p>
+  <details class="block cat-details">
+    <summary>
+      <div class="sec-head"><span class="sec-no">01</span><span class="sec-title">아우터 OUTER</span></div>
+      <h2>OUTER · 2개 품목 · 재고 130개 <span class="cat-chevron">▾</span></h2>
+      <p class="sec-note">재고자산가치 5,366,140원</p>
+    </summary>
     <div class="stock-grid">
 <div class="stock-card">
   <div class="stock-card-head">
@@ -151,12 +159,14 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   
 </div>
     </div>
-  </section>
+  </details>
 
-  <section class="block">
-    <div class="sec-head"><span class="sec-no">02</span><span class="sec-title">상의 TOP</span></div>
-    <h2>TOP · 14개 품목 · 재고 768개</h2>
-    <p class="sec-note">재고자산가치 20,798,425원</p>
+  <details class="block cat-details">
+    <summary>
+      <div class="sec-head"><span class="sec-no">02</span><span class="sec-title">상의 TOP</span></div>
+      <h2>TOP · 14개 품목 · 재고 768개 <span class="cat-chevron">▾</span></h2>
+      <p class="sec-note">재고자산가치 20,798,425원</p>
+    </summary>
     <div class="stock-grid">
 <div class="stock-card sold-out">
   <div class="stock-card-head">
@@ -369,12 +379,14 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   <div class="scbe">손익분기 17.5개</div>
 </div>
     </div>
-  </section>
+  </details>
 
-  <section class="block">
-    <div class="sec-head"><span class="sec-no">03</span><span class="sec-title">하의 BOTTOM</span></div>
-    <h2>BOTTOM · 5개 품목 · 재고 305개</h2>
-    <p class="sec-note">재고자산가치 9,999,300원</p>
+  <details class="block cat-details">
+    <summary>
+      <div class="sec-head"><span class="sec-no">03</span><span class="sec-title">하의 BOTTOM</span></div>
+      <h2>BOTTOM · 5개 품목 · 재고 305개 <span class="cat-chevron">▾</span></h2>
+      <p class="sec-note">재고자산가치 9,999,300원</p>
+    </summary>
     <div class="stock-grid">
 <div class="stock-card">
   <div class="stock-card-head">
@@ -452,12 +464,14 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   <div class="scbe">손익분기 1.8개</div>
 </div>
     </div>
-  </section>
+  </details>
 
-  <section class="block">
-    <div class="sec-head"><span class="sec-no">04</span><span class="sec-title">액세서리 ACC</span></div>
-    <h2>ACC · 16개 품목 · 재고 679개</h2>
-    <p class="sec-note">재고자산가치 10,970,070원</p>
+  <details class="block cat-details">
+    <summary>
+      <div class="sec-head"><span class="sec-no">04</span><span class="sec-title">액세서리 ACC</span></div>
+      <h2>ACC · 16개 품목 · 재고 679개 <span class="cat-chevron">▾</span></h2>
+      <p class="sec-note">재고자산가치 10,970,070원</p>
+    </summary>
     <div class="stock-grid">
 <div class="stock-card">
   <div class="stock-card-head">
@@ -700,11 +714,11 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   <div class="scbe">손익분기 24.1개</div>
 </div>
     </div>
-  </section>
+  </details>
 
 
   <footer>
-    <span>자동 생성 2026.09.03 16:01</span>
+    <span>자동 생성 2026.09.03 16:03</span>
   </footer>
 </div>
 </body>
