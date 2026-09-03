@@ -64,6 +64,9 @@ h2{font-family:"Gowun Batang",serif;font-size:24px;margin:2px 0 0;font-weight:70
 .stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:20px;}
 .stock-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
 .stock-card.sold-out{opacity:.7;}
+.stock-card.sold-out summary{cursor:pointer;list-style:none;}
+.stock-card.sold-out summary::-webkit-details-marker{display:none;}
+.stock-card.sold-out[open] .stock-card-head{padding-bottom:0;}
 .scthumb{display:block;width:30px;height:30px;border-radius:6px;object-fit:cover;background:var(--surface-2);flex:none;}
 .scthumb.noimg{display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:10px;}
 .stock-card-head{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;}
@@ -101,7 +104,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   </div>
 
   <section class="cover">
-    <p class="eyebrow">2026.09.03 16:07 기준 · 디코드 재고 현황</p>
+    <p class="eyebrow">2026.09.03 16:15 기준 · 디코드 재고 현황</p>
     <h1>재고 현황</h1>
     <p class="lede">디코드 재고 현황표 기준 자동 갱신 스냅샷입니다. 현재고는 총 재고(온라인+오프라인 합산)이며, 더디코드 열은 그중 오프라인(매장) 보유분입니다.</p>
   </section>
@@ -168,21 +171,21 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
       
     </summary>
     <div class="stock-grid">
-<div class="stock-card sold-out">
-  <div class="stock-card-head">
+<details class="stock-card sold-out">
+  <summary><div class="stock-card-head">
     <div class="scthumb noimg">-</div>
     <div class="scnamewrap">
       <div class="scname">T 001 KK/CC<span class="tag out">품절</span></div>
       
     </div>
-  </div>
+  </div></summary>
   <table class="sctable">
     <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
     <tbody><tr><td>M</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">11</td><td class="dim">30</td></tr><tr><td>L</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">26</td><td class="dim">12</td><td class="dim">39</td></tr><tr><td>XL</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">9</td><td class="dim">29</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:98%"></div></div><span>소진 98% · 재고 0개</span></div>
   <div class="scbe good">손익분기 달성 (+33.6개)</div>
-</div>
+</details>
 <div class="stock-card">
   <div class="stock-card-head">
     <img class="scthumb" src="data:image/jpeg;base64,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" alt="T 003">
@@ -718,7 +721,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
 
 
   <footer>
-    <span>자동 생성 2026.09.03 16:07</span>
+    <span>자동 생성 2026.09.03 16:15</span>
   </footer>
 </div>
 </body>
