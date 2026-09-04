@@ -84,6 +84,7 @@ h2{font-family:"Gowun Batang",serif;font-size:24px;margin:2px 0 0;font-weight:70
 .stockcell.out{color:var(--critical);}
 .stockcell.low{color:var(--warn);}
 .dim.offline{font-style:italic;}
+.dim.defect{color:var(--critical);}
 .tag{display:inline-block;font-size:9.5px;font-weight:600;border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:middle;}
 .tag.out{background:rgba(177,68,42,.14);color:var(--critical);}
 .tag.low{background:rgba(185,138,46,.16);color:var(--warn);}
@@ -105,7 +106,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
   </div>
 
   <section class="cover">
-    <p class="eyebrow">2026.09.03 17:39 기준 · 디코드 재고 현황</p>
+    <p class="eyebrow">2026.09.04 14:33 기준 · 디코드 재고 현황</p>
     <h1>재고 현황</h1>
     <p class="lede">디코드 재고 현황표 기준 자동 갱신 스냅샷입니다. 현재고는 총 재고(온라인+오프라인 합산)이며, 더디코드 열은 그중 오프라인(매장) 보유분입니다.</p>
   </section>
@@ -141,8 +142,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell ok">15</td><td class="dim offline">0</td><td class="dim">12</td><td class="dim">11</td><td class="dim">39</td></tr><tr><td>L</td><td class="stockcell ok">34</td><td class="dim offline">0</td><td class="dim">7</td><td class="dim">10</td><td class="dim">51</td></tr><tr><td>XL</td><td class="stockcell ok">20</td><td class="dim offline">0</td><td class="dim">6</td><td class="dim">12</td><td class="dim">38</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell ok">15</td><td class="dim offline">0</td><td class="dim">12</td><td class="dim">11</td><td class="dim defect">1</td><td class="dim">39</td></tr><tr><td>L</td><td class="stockcell ok">34</td><td class="dim offline">0</td><td class="dim">7</td><td class="dim">10</td><td class="dim defect">0</td><td class="dim">51</td></tr><tr><td>XL</td><td class="stockcell ok">20</td><td class="dim offline">0</td><td class="dim">6</td><td class="dim">12</td><td class="dim defect">0</td><td class="dim">38</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:45%"></div></div><span>소진 45% · 재고 69개</span></div>
   <div class="scbe">손익분기 62.8개</div>
@@ -156,8 +157,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell ok">25</td><td class="dim offline">0</td><td class="dim">7</td><td class="dim">6</td><td class="dim">38</td></tr><tr><td>L</td><td class="stockcell ok">25</td><td class="dim offline">0</td><td class="dim">15</td><td class="dim">12</td><td class="dim">52</td></tr><tr><td>XL</td><td class="stockcell ok">11</td><td class="dim offline">0</td><td class="dim">20</td><td class="dim">7</td><td class="dim">38</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell ok">25</td><td class="dim offline">0</td><td class="dim">7</td><td class="dim">6</td><td class="dim defect">0</td><td class="dim">38</td></tr><tr><td>L</td><td class="stockcell ok">25</td><td class="dim offline">0</td><td class="dim">15</td><td class="dim">12</td><td class="dim defect">0</td><td class="dim">52</td></tr><tr><td>XL</td><td class="stockcell ok">11</td><td class="dim offline">0</td><td class="dim">20</td><td class="dim">7</td><td class="dim defect">0</td><td class="dim">38</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:52%"></div></div><span>소진 52% · 재고 61개</span></div>
   
@@ -179,8 +180,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     <span class="cat-chevron">▾</span>
   </summary>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">11</td><td class="dim">30</td></tr><tr><td>L</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">26</td><td class="dim">12</td><td class="dim">39</td></tr><tr><td>XL</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">9</td><td class="dim">29</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">11</td><td class="dim defect">0</td><td class="dim">30</td></tr><tr><td>L</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">26</td><td class="dim">12</td><td class="dim defect">1</td><td class="dim">39</td></tr><tr><td>XL</td><td class="stockcell out">0<span class="tag out">품절</span></td><td class="dim offline">0</td><td class="dim">19</td><td class="dim">9</td><td class="dim defect">1</td><td class="dim">29</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:98%"></div></div><span>소진 98% · 재고 0개</span></div>
   <div class="scbe good">손익분기 달성 (+33.6개)</div>
@@ -194,8 +195,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell ok">16</td><td class="dim offline">3</td><td class="dim">2</td><td class="dim">2</td><td class="dim">20</td></tr><tr><td>L</td><td class="stockcell ok">29</td><td class="dim offline">2</td><td class="dim">8</td><td class="dim">3</td><td class="dim">41</td></tr><tr><td>XL</td><td class="stockcell ok">35</td><td class="dim offline">3</td><td class="dim">3</td><td class="dim">4</td><td class="dim">42</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell ok">16</td><td class="dim offline">3</td><td class="dim">2</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">20</td></tr><tr><td>L</td><td class="stockcell ok">29</td><td class="dim offline">2</td><td class="dim">8</td><td class="dim">3</td><td class="dim defect">1</td><td class="dim">41</td></tr><tr><td>XL</td><td class="stockcell ok">35</td><td class="dim offline">3</td><td class="dim">3</td><td class="dim">4</td><td class="dim defect">0</td><td class="dim">42</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:21%"></div></div><span>소진 21% · 재고 80개</span></div>
   <div class="scbe">손익분기 23.8개</div>
@@ -209,8 +210,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">9</td><td class="dim offline">2</td><td class="dim">4</td><td class="dim">1</td><td class="dim">15</td></tr><tr><td>M</td><td class="stockcell ok">9</td><td class="dim offline">4</td><td class="dim">4</td><td class="dim">0</td><td class="dim">17</td></tr><tr><td>L</td><td class="stockcell ok">23</td><td class="dim offline">3</td><td class="dim">12</td><td class="dim">6</td><td class="dim">45</td></tr><tr><td>XL</td><td class="stockcell ok">8</td><td class="dim offline">3</td><td class="dim">16</td><td class="dim">5</td><td class="dim">30</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">9</td><td class="dim offline">2</td><td class="dim">4</td><td class="dim">1</td><td class="dim defect">1</td><td class="dim">15</td></tr><tr><td>M</td><td class="stockcell ok">9</td><td class="dim offline">4</td><td class="dim">4</td><td class="dim">0</td><td class="dim defect">4</td><td class="dim">17</td></tr><tr><td>L</td><td class="stockcell ok">23</td><td class="dim offline">3</td><td class="dim">12</td><td class="dim">6</td><td class="dim defect">4</td><td class="dim">45</td></tr><tr><td>XL</td><td class="stockcell ok">8</td><td class="dim offline">3</td><td class="dim">16</td><td class="dim">5</td><td class="dim defect">1</td><td class="dim">30</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:45%"></div></div><span>소진 45% · 재고 49개</span></div>
   <div class="scbe good">손익분기 달성 (+0.3개)</div>
@@ -224,8 +225,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">12</td><td class="dim offline">5</td><td class="dim">1</td><td class="dim">4</td><td class="dim">17</td></tr><tr><td>M</td><td class="stockcell ok">14</td><td class="dim offline">1</td><td class="dim">1</td><td class="dim">1</td><td class="dim">16</td></tr><tr><td>L</td><td class="stockcell ok">31</td><td class="dim offline">4</td><td class="dim">7</td><td class="dim">7</td><td class="dim">45</td></tr><tr><td>XL</td><td class="stockcell ok">13</td><td class="dim offline">2</td><td class="dim">13</td><td class="dim">5</td><td class="dim">31</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">12</td><td class="dim offline">5</td><td class="dim">1</td><td class="dim">4</td><td class="dim defect">0</td><td class="dim">17</td></tr><tr><td>M</td><td class="stockcell ok">14</td><td class="dim offline">1</td><td class="dim">1</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">16</td></tr><tr><td>L</td><td class="stockcell ok">31</td><td class="dim offline">4</td><td class="dim">7</td><td class="dim">7</td><td class="dim defect">0</td><td class="dim">45</td></tr><tr><td>XL</td><td class="stockcell ok">13</td><td class="dim offline">2</td><td class="dim">13</td><td class="dim">5</td><td class="dim defect">0</td><td class="dim">31</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:36%"></div></div><span>소진 36% · 재고 70개</span></div>
   <div class="scbe">손익분기 14.1개</div>
@@ -239,8 +240,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">6</td><td class="dim offline">4</td><td class="dim">9</td><td class="dim">2</td><td class="dim">18</td></tr><tr><td>M</td><td class="stockcell ok">8</td><td class="dim offline">3</td><td class="dim">5</td><td class="dim">2</td><td class="dim">15</td></tr><tr><td>L</td><td class="stockcell ok">26</td><td class="dim offline">3</td><td class="dim">7</td><td class="dim">7</td><td class="dim">40</td></tr><tr><td>XL</td><td class="stockcell ok">19</td><td class="dim offline">2</td><td class="dim">9</td><td class="dim">3</td><td class="dim">31</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">6</td><td class="dim offline">4</td><td class="dim">9</td><td class="dim">2</td><td class="dim defect">1</td><td class="dim">18</td></tr><tr><td>M</td><td class="stockcell ok">8</td><td class="dim offline">3</td><td class="dim">5</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">15</td></tr><tr><td>L</td><td class="stockcell ok">26</td><td class="dim offline">3</td><td class="dim">7</td><td class="dim">7</td><td class="dim defect">0</td><td class="dim">40</td></tr><tr><td>XL</td><td class="stockcell ok">19</td><td class="dim offline">2</td><td class="dim">9</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">31</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:42%"></div></div><span>소진 42% · 재고 59개</span></div>
   <div class="scbe">손익분기 1.3개</div>
@@ -254,8 +255,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">4</td><td class="dim">6</td><td class="dim">4</td><td class="dim">18</td></tr><tr><td>M</td><td class="stockcell ok">14</td><td class="dim offline">4</td><td class="dim">5</td><td class="dim">0</td><td class="dim">19</td></tr><tr><td>L</td><td class="stockcell ok">17</td><td class="dim offline">4</td><td class="dim">7</td><td class="dim">9</td><td class="dim">33</td></tr><tr><td>XL</td><td class="stockcell ok">13</td><td class="dim offline">3</td><td class="dim">14</td><td class="dim">9</td><td class="dim">36</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">4</td><td class="dim">6</td><td class="dim">4</td><td class="dim defect">5</td><td class="dim">18</td></tr><tr><td>M</td><td class="stockcell ok">14</td><td class="dim offline">4</td><td class="dim">5</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">19</td></tr><tr><td>L</td><td class="stockcell ok">17</td><td class="dim offline">4</td><td class="dim">7</td><td class="dim">9</td><td class="dim defect">0</td><td class="dim">33</td></tr><tr><td>XL</td><td class="stockcell ok">13</td><td class="dim offline">3</td><td class="dim">14</td><td class="dim">9</td><td class="dim defect">0</td><td class="dim">36</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:51%"></div></div><span>소진 51% · 재고 48개</span></div>
   <div class="scbe">손익분기 0.6개</div>
@@ -269,8 +270,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">10</td><td class="dim offline">3</td><td class="dim">5</td><td class="dim">2</td><td class="dim">17</td></tr><tr><td>M</td><td class="stockcell ok">13</td><td class="dim offline">4</td><td class="dim">3</td><td class="dim">1</td><td class="dim">17</td></tr><tr><td>L</td><td class="stockcell ok">10</td><td class="dim offline">4</td><td class="dim">17</td><td class="dim">3</td><td class="dim">32</td></tr><tr><td>XL</td><td class="stockcell ok">14</td><td class="dim offline">2</td><td class="dim">15</td><td class="dim">2</td><td class="dim">31</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">10</td><td class="dim offline">3</td><td class="dim">5</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">17</td></tr><tr><td>M</td><td class="stockcell ok">13</td><td class="dim offline">4</td><td class="dim">3</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">17</td></tr><tr><td>L</td><td class="stockcell ok">10</td><td class="dim offline">4</td><td class="dim">17</td><td class="dim">3</td><td class="dim defect">2</td><td class="dim">32</td></tr><tr><td>XL</td><td class="stockcell ok">14</td><td class="dim offline">2</td><td class="dim">15</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">31</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:49%"></div></div><span>소진 49% · 재고 47개</span></div>
   <div class="scbe good">손익분기 달성 (+11.1개)</div>
@@ -284,8 +285,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">11</td><td class="dim offline">2</td><td class="dim">1</td><td class="dim">1</td><td class="dim">15</td></tr><tr><td>M</td><td class="stockcell ok">11</td><td class="dim offline">2</td><td class="dim">3</td><td class="dim">1</td><td class="dim">15</td></tr><tr><td>L</td><td class="stockcell ok">34</td><td class="dim offline">3</td><td class="dim">3</td><td class="dim">2</td><td class="dim">39</td></tr><tr><td>XL</td><td class="stockcell ok">19</td><td class="dim offline">3</td><td class="dim">9</td><td class="dim">3</td><td class="dim">33</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">11</td><td class="dim offline">2</td><td class="dim">1</td><td class="dim">1</td><td class="dim defect">2</td><td class="dim">15</td></tr><tr><td>M</td><td class="stockcell ok">11</td><td class="dim offline">2</td><td class="dim">3</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">15</td></tr><tr><td>L</td><td class="stockcell ok">34</td><td class="dim offline">3</td><td class="dim">3</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">39</td></tr><tr><td>XL</td><td class="stockcell ok">19</td><td class="dim offline">3</td><td class="dim">9</td><td class="dim">3</td><td class="dim defect">2</td><td class="dim">33</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:23%"></div></div><span>소진 23% · 재고 75개</span></div>
   <div class="scbe">손익분기 17.3개</div>
@@ -299,8 +300,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">13</td><td class="dim offline">5</td><td class="dim">2</td><td class="dim">0</td><td class="dim">15</td></tr><tr><td>M</td><td class="stockcell ok">12</td><td class="dim offline">5</td><td class="dim">2</td><td class="dim">1</td><td class="dim">15</td></tr><tr><td>L</td><td class="stockcell ok">37</td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">2</td><td class="dim">40</td></tr><tr><td>XL</td><td class="stockcell ok">19</td><td class="dim offline">4</td><td class="dim">6</td><td class="dim">2</td><td class="dim">30</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">13</td><td class="dim offline">5</td><td class="dim">2</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">15</td></tr><tr><td>M</td><td class="stockcell ok">12</td><td class="dim offline">5</td><td class="dim">2</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">15</td></tr><tr><td>L</td><td class="stockcell ok">37</td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">40</td></tr><tr><td>XL</td><td class="stockcell ok">19</td><td class="dim offline">4</td><td class="dim">6</td><td class="dim">2</td><td class="dim defect">3</td><td class="dim">30</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:16%"></div></div><span>소진 16% · 재고 81개</span></div>
   <div class="scbe">손익분기 22.3개</div>
@@ -314,8 +315,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>S</td><td class="stockcell ok">25</td><td class="dim offline">7</td><td class="dim">4</td><td class="dim">1</td><td class="dim">30</td></tr><tr><td>M</td><td class="stockcell ok">18</td><td class="dim offline">5</td><td class="dim">0</td><td class="dim">3</td><td class="dim">21</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>S</td><td class="stockcell ok">25</td><td class="dim offline">7</td><td class="dim">4</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">30</td></tr><tr><td>M</td><td class="stockcell ok">18</td><td class="dim offline">5</td><td class="dim">0</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">21</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:16%"></div></div><span>소진 16% · 재고 43개</span></div>
   <div class="scbe">손익분기 15.1개</div>
@@ -329,8 +330,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>S</td><td class="stockcell ok">29</td><td class="dim offline">7</td><td class="dim">2</td><td class="dim">1</td><td class="dim">32</td></tr><tr><td>M</td><td class="stockcell ok">17</td><td class="dim offline">4</td><td class="dim">2</td><td class="dim">3</td><td class="dim">22</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>S</td><td class="stockcell ok">29</td><td class="dim offline">7</td><td class="dim">2</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">32</td></tr><tr><td>M</td><td class="stockcell ok">17</td><td class="dim offline">4</td><td class="dim">2</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">22</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:15%"></div></div><span>소진 15% · 재고 46개</span></div>
   <div class="scbe">손익분기 15.1개</div>
@@ -344,8 +345,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">10</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim">10</td></tr><tr><td>M</td><td class="stockcell ok">8</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">1</td><td class="dim">9</td></tr><tr><td>L</td><td class="stockcell ok">35</td><td class="dim offline">5</td><td class="dim">1</td><td class="dim">2</td><td class="dim">38</td></tr><tr><td>XL</td><td class="stockcell ok">26</td><td class="dim offline">6</td><td class="dim">0</td><td class="dim">1</td><td class="dim">27</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">10</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">10</td></tr><tr><td>M</td><td class="stockcell ok">8</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">9</td></tr><tr><td>L</td><td class="stockcell ok">35</td><td class="dim offline">5</td><td class="dim">1</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">38</td></tr><tr><td>XL</td><td class="stockcell ok">26</td><td class="dim offline">6</td><td class="dim">0</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">27</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:6%"></div></div><span>소진 6% · 재고 79개</span></div>
   <div class="scbe">손익분기 24.7개</div>
@@ -359,8 +360,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">7</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim">11</td></tr><tr><td>M</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">2</td><td class="dim">7</td></tr><tr><td>L</td><td class="stockcell ok">20</td><td class="dim offline">5</td><td class="dim">0</td><td class="dim">4</td><td class="dim">25</td></tr><tr><td>XL</td><td class="stockcell ok">14</td><td class="dim offline">6</td><td class="dim">1</td><td class="dim">2</td><td class="dim">18</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">7</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim defect">4</td><td class="dim">11</td></tr><tr><td>M</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">7</td></tr><tr><td>L</td><td class="stockcell ok">20</td><td class="dim offline">5</td><td class="dim">0</td><td class="dim">4</td><td class="dim defect">1</td><td class="dim">25</td></tr><tr><td>XL</td><td class="stockcell ok">14</td><td class="dim offline">6</td><td class="dim">1</td><td class="dim">2</td><td class="dim defect">1</td><td class="dim">18</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:16%"></div></div><span>소진 16% · 재고 45개</span></div>
   <div class="scbe">손익분기 19.5개</div>
@@ -374,8 +375,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>XS</td><td class="stockcell ok">9</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim">9</td></tr><tr><td>M</td><td class="stockcell low">5<span class="tag low">저재고</span></td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">2</td><td class="dim">8</td></tr><tr><td>L</td><td class="stockcell ok">15</td><td class="dim offline">4</td><td class="dim">1</td><td class="dim">4</td><td class="dim">20</td></tr><tr><td>XL</td><td class="stockcell ok">17</td><td class="dim offline">5</td><td class="dim">0</td><td class="dim">1</td><td class="dim">19</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>XS</td><td class="stockcell ok">9</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">9</td></tr><tr><td>M</td><td class="stockcell low">5<span class="tag low">저재고</span></td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">8</td></tr><tr><td>L</td><td class="stockcell ok">15</td><td class="dim offline">4</td><td class="dim">1</td><td class="dim">4</td><td class="dim defect">0</td><td class="dim">20</td></tr><tr><td>XL</td><td class="stockcell ok">17</td><td class="dim offline">5</td><td class="dim">0</td><td class="dim">1</td><td class="dim defect">1</td><td class="dim">19</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:16%"></div></div><span>소진 16% · 재고 46개</span></div>
   <div class="scbe">손익분기 17.5개</div>
@@ -399,8 +400,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">2</td><td class="dim">8</td><td class="dim">2</td><td class="dim">14</td></tr><tr><td>L</td><td class="stockcell ok">35</td><td class="dim offline">2</td><td class="dim">20</td><td class="dim">7</td><td class="dim">62</td></tr><tr><td>XL</td><td class="stockcell ok">9</td><td class="dim offline">3</td><td class="dim">6</td><td class="dim">3</td><td class="dim">18</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">2</td><td class="dim">8</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">14</td></tr><tr><td>L</td><td class="stockcell ok">35</td><td class="dim offline">2</td><td class="dim">20</td><td class="dim">7</td><td class="dim defect">0</td><td class="dim">62</td></tr><tr><td>XL</td><td class="stockcell ok">9</td><td class="dim offline">3</td><td class="dim">6</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">18</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:49%"></div></div><span>소진 49% · 재고 48개</span></div>
   <div class="scbe">손익분기 2.8개</div>
@@ -414,8 +415,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell ok">29</td><td class="dim offline">1</td><td class="dim">3</td><td class="dim">3</td><td class="dim">35</td></tr><tr><td>L</td><td class="stockcell ok">20</td><td class="dim offline">3</td><td class="dim">7</td><td class="dim">4</td><td class="dim">34</td></tr><tr><td>XL</td><td class="stockcell ok">25</td><td class="dim offline">2</td><td class="dim">9</td><td class="dim">7</td><td class="dim">42</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell ok">29</td><td class="dim offline">1</td><td class="dim">3</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">35</td></tr><tr><td>L</td><td class="stockcell ok">20</td><td class="dim offline">3</td><td class="dim">7</td><td class="dim">4</td><td class="dim defect">3</td><td class="dim">34</td></tr><tr><td>XL</td><td class="stockcell ok">25</td><td class="dim offline">2</td><td class="dim">9</td><td class="dim">7</td><td class="dim defect">1</td><td class="dim">42</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:30%"></div></div><span>소진 30% · 재고 74개</span></div>
   <div class="scbe">손익분기 18.3개</div>
@@ -429,8 +430,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">2</td><td class="dim">3</td><td class="dim">1</td><td class="dim">8</td></tr><tr><td>L</td><td class="stockcell ok">28</td><td class="dim offline">3</td><td class="dim">11</td><td class="dim">3</td><td class="dim">42</td></tr><tr><td>XL</td><td class="stockcell ok">25</td><td class="dim offline">4</td><td class="dim">11</td><td class="dim">5</td><td class="dim">41</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell low">4<span class="tag low">저재고</span></td><td class="dim offline">2</td><td class="dim">3</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">8</td></tr><tr><td>L</td><td class="stockcell ok">28</td><td class="dim offline">3</td><td class="dim">11</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">42</td></tr><tr><td>XL</td><td class="stockcell ok">25</td><td class="dim offline">4</td><td class="dim">11</td><td class="dim">5</td><td class="dim defect">0</td><td class="dim">41</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:37%"></div></div><span>소진 37% · 재고 57개</span></div>
   <div class="scbe">손익분기 12.3개</div>
@@ -444,8 +445,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell ok">8</td><td class="dim offline">2</td><td class="dim">2</td><td class="dim">0</td><td class="dim">10</td></tr><tr><td>L</td><td class="stockcell ok">31</td><td class="dim offline">2</td><td class="dim">7</td><td class="dim">3</td><td class="dim">41</td></tr><tr><td>XL</td><td class="stockcell ok">27</td><td class="dim offline">3</td><td class="dim">9</td><td class="dim">6</td><td class="dim">42</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell ok">8</td><td class="dim offline">2</td><td class="dim">2</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">10</td></tr><tr><td>L</td><td class="stockcell ok">31</td><td class="dim offline">2</td><td class="dim">7</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">41</td></tr><tr><td>XL</td><td class="stockcell ok">27</td><td class="dim offline">3</td><td class="dim">9</td><td class="dim">6</td><td class="dim defect">0</td><td class="dim">42</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:29%"></div></div><span>소진 29% · 재고 66개</span></div>
   <div class="scbe">손익분기 19.3개</div>
@@ -459,8 +460,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>M</td><td class="stockcell ok">6</td><td class="dim offline">3</td><td class="dim">6</td><td class="dim">0</td><td class="dim">12</td></tr><tr><td>L</td><td class="stockcell ok">27</td><td class="dim offline">4</td><td class="dim">14</td><td class="dim">1</td><td class="dim">42</td></tr><tr><td>XL</td><td class="stockcell ok">27</td><td class="dim offline">3</td><td class="dim">13</td><td class="dim">1</td><td class="dim">41</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>M</td><td class="stockcell ok">6</td><td class="dim offline">3</td><td class="dim">6</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">12</td></tr><tr><td>L</td><td class="stockcell ok">27</td><td class="dim offline">4</td><td class="dim">14</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">42</td></tr><tr><td>XL</td><td class="stockcell ok">27</td><td class="dim offline">3</td><td class="dim">13</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">41</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:37%"></div></div><span>소진 37% · 재고 60개</span></div>
   <div class="scbe">손익분기 1.8개</div>
@@ -484,8 +485,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">18</td><td class="dim offline">1</td><td class="dim">0</td><td class="dim">0</td><td class="dim">63</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">18</td><td class="dim offline">1</td><td class="dim">0</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">63</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:0%"></div></div><span>소진 0% · 재고 18개</span></div>
   
@@ -499,8 +500,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">6</td><td class="dim offline">1</td><td class="dim">0</td><td class="dim">0</td><td class="dim">103</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">6</td><td class="dim offline">1</td><td class="dim">0</td><td class="dim">0</td><td class="dim defect">17</td><td class="dim">103</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:0%"></div></div><span>소진 0% · 재고 6개</span></div>
   
@@ -514,8 +515,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell low">2<span class="tag low">저재고</span></td><td class="dim offline">1</td><td class="dim">1</td><td class="dim">0</td><td class="dim">67</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell low">2<span class="tag low">저재고</span></td><td class="dim offline">1</td><td class="dim">1</td><td class="dim">0</td><td class="dim defect">1</td><td class="dim">67</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:1%"></div></div><span>소진 1% · 재고 2개</span></div>
   
@@ -529,8 +530,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">34</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim">62</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">34</td><td class="dim offline">4</td><td class="dim">0</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">62</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:0%"></div></div><span>소진 0% · 재고 34개</span></div>
   <div class="scbe">손익분기 40.4개</div>
@@ -544,8 +545,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">37</td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">0</td><td class="dim">104</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">37</td><td class="dim offline">3</td><td class="dim">1</td><td class="dim">0</td><td class="dim defect">0</td><td class="dim">104</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:1%"></div></div><span>소진 1% · 재고 37개</span></div>
   
@@ -559,8 +560,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">25</td><td class="dim offline">2</td><td class="dim">1</td><td class="dim">4</td><td class="dim">30</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">25</td><td class="dim offline">2</td><td class="dim">1</td><td class="dim">4</td><td class="dim defect">0</td><td class="dim">30</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:17%"></div></div><span>소진 17% · 재고 25개</span></div>
   <div class="scbe">손익분기 5.1개</div>
@@ -574,8 +575,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">22</td><td class="dim offline">3</td><td class="dim">3</td><td class="dim">5</td><td class="dim">30</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">22</td><td class="dim offline">3</td><td class="dim">3</td><td class="dim">5</td><td class="dim defect">0</td><td class="dim">30</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:27%"></div></div><span>소진 27% · 재고 22개</span></div>
   <div class="scbe">손익분기 3.1개</div>
@@ -589,8 +590,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">27</td><td class="dim offline">6</td><td class="dim">21</td><td class="dim">38</td><td class="dim">90</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">27</td><td class="dim offline">6</td><td class="dim">21</td><td class="dim">38</td><td class="dim defect">1</td><td class="dim">90</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:66%"></div></div><span>소진 66% · 재고 27개</span></div>
   <div class="scbe">손익분기 86.3개</div>
@@ -604,8 +605,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>Free</td><td class="stockcell ok">38</td><td class="dim offline">7</td><td class="dim">7</td><td class="dim">36</td><td class="dim">90</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>Free</td><td class="stockcell ok">38</td><td class="dim offline">7</td><td class="dim">7</td><td class="dim">36</td><td class="dim defect">0</td><td class="dim">90</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:48%"></div></div><span>소진 48% · 재고 38개</span></div>
   
@@ -619,8 +620,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>FREE</td><td class="stockcell ok">63</td><td class="dim offline">4</td><td class="dim">29</td><td class="dim">9</td><td class="dim">101</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>FREE</td><td class="stockcell ok">63</td><td class="dim offline">4</td><td class="dim">29</td><td class="dim">9</td><td class="dim defect">0</td><td class="dim">101</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:38%"></div></div><span>소진 38% · 재고 63개</span></div>
   <div class="scbe">손익분기 26.9개</div>
@@ -634,8 +635,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>FREE</td><td class="stockcell ok">88</td><td class="dim offline">5</td><td class="dim">9</td><td class="dim">3</td><td class="dim">100</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>FREE</td><td class="stockcell ok">88</td><td class="dim offline">5</td><td class="dim">9</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">100</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:12%"></div></div><span>소진 12% · 재고 88개</span></div>
   <div class="scbe">손익분기 8.6개</div>
@@ -649,8 +650,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>FREE</td><td class="stockcell ok">92</td><td class="dim offline">4</td><td class="dim">6</td><td class="dim">1</td><td class="dim">99</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>FREE</td><td class="stockcell ok">92</td><td class="dim offline">4</td><td class="dim">6</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">99</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:7%"></div></div><span>소진 7% · 재고 92개</span></div>
   <div class="scbe">손익분기 17.2개</div>
@@ -664,8 +665,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>FREE</td><td class="stockcell ok">90</td><td class="dim offline">6</td><td class="dim">5</td><td class="dim">2</td><td class="dim">97</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>FREE</td><td class="stockcell ok">90</td><td class="dim offline">6</td><td class="dim">5</td><td class="dim">2</td><td class="dim defect">0</td><td class="dim">97</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:7%"></div></div><span>소진 7% · 재고 90개</span></div>
   <div class="scbe">손익분기 17.8개</div>
@@ -679,8 +680,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>FREE</td><td class="stockcell ok">75</td><td class="dim offline">4</td><td class="dim">24</td><td class="dim">3</td><td class="dim">102</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>FREE</td><td class="stockcell ok">75</td><td class="dim offline">4</td><td class="dim">24</td><td class="dim">3</td><td class="dim defect">0</td><td class="dim">102</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:26%"></div></div><span>소진 26% · 재고 75개</span></div>
   <div class="scbe">손익분기 11.0개</div>
@@ -694,8 +695,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>AMBER</td><td class="stockcell ok">14</td><td class="dim offline">7</td><td class="dim">7</td><td class="dim">4</td><td class="dim">25</td></tr><tr><td>SMOKE</td><td class="stockcell ok">15</td><td class="dim offline">6</td><td class="dim">9</td><td class="dim">1</td><td class="dim">25</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>AMBER</td><td class="stockcell ok">14</td><td class="dim offline">7</td><td class="dim">7</td><td class="dim">4</td><td class="dim defect">0</td><td class="dim">25</td></tr><tr><td>SMOKE</td><td class="stockcell ok">15</td><td class="dim offline">6</td><td class="dim">9</td><td class="dim">1</td><td class="dim defect">0</td><td class="dim">25</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:42%"></div></div><span>소진 42% · 재고 29개</span></div>
   <div class="scbe">손익분기 18.6개</div>
@@ -709,8 +710,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
     </div>
   </div>
   <table class="sctable">
-    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>생산</th></tr></thead>
-    <tbody><tr><td>BLACK</td><td class="stockcell ok">12</td><td class="dim offline">5</td><td class="dim">3</td><td class="dim">5</td><td class="dim">20</td></tr><tr><td>BEIGE</td><td class="stockcell ok">21</td><td class="dim offline">7</td><td class="dim">3</td><td class="dim">4</td><td class="dim">28</td></tr></tbody>
+    <thead><tr><th>사이즈</th><th>현재고</th><th>더디코드</th><th>판매</th><th>협찬</th><th>불량</th><th>생산</th></tr></thead>
+    <tbody><tr><td>BLACK</td><td class="stockcell ok">12</td><td class="dim offline">5</td><td class="dim">3</td><td class="dim">5</td><td class="dim defect">0</td><td class="dim">20</td></tr><tr><td>BEIGE</td><td class="stockcell ok">21</td><td class="dim offline">7</td><td class="dim">3</td><td class="dim">4</td><td class="dim defect">0</td><td class="dim">28</td></tr></tbody>
   </table>
   <div class="scfoot"><div class="scbar"><div class="scbarfill" style="width:31%"></div></div><span>소진 31% · 재고 33개</span></div>
   <div class="scbe">손익분기 24.1개</div>
@@ -720,7 +721,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:40px;font-si
 
 
   <footer>
-    <span>자동 생성 2026.09.03 17:39</span>
+    <span>자동 생성 2026.09.04 14:33</span>
   </footer>
 </div>
 </body>
